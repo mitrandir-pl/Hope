@@ -16,3 +16,16 @@ Game::Game(int n) {
 		this->field[i].resize(this->size, 0);
 	}
 }
+bool Game::set() {
+	if (!is_empty(this->cur_pos.first, this->cur_pos.second)) {
+		return 0;
+	}
+	field[this->cur_pos.first][this->cur_pos.second] = this->player_num;
+	this->player_num = this->player_num ^ 3;
+}
+int Game::get(int x, int y) {
+	if (x >= this->size || y >= this->size) {
+		return -1;
+	}
+	return field[x][y];
+}
