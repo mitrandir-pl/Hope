@@ -97,3 +97,43 @@ void Game::show() {
 	cout << endl;
 }
 
+void Game::move(char diraction) {
+	switch (diraction) //добавить звук, когда выходит за границы поля
+	{
+	case 'w':	//up
+		if (this->cur_pos.first == 0) {
+			break;
+		}
+		this->cur_pos.first -= 1;
+		break;
+	case 'a':	//left
+		if (this->cur_pos.second == 0) {
+			break;
+		}
+		this->cur_pos.second -= 1;
+		break;
+	case 's':	//down
+		if (this->cur_pos.first == this->size - 1) {
+			break;
+		}
+		this->cur_pos.first += 1;
+		break;
+	case 'd':	//right
+		if (this->cur_pos.second == this->size - 1) {
+			break;
+		}
+		this->cur_pos.second += 1;
+		break;
+	}
+}
+
+void Game::get_diraction() {
+	char dir;
+	dir = _getch();
+	if (dir == 13) {
+		set();
+		return;
+	}
+	this->move(dir);
+	this->show();
+}
