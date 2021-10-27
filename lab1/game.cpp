@@ -29,9 +29,24 @@ int Game::get(int x, int y) {
 	}
 	return field[x][y];
 }
+
 bool Game::is_empty(int x, int y) { //if cell is empty - 1, else - 0
 	if (get(x, y) == 0) {
 		return 1;
 	}
 	return 0;
+}
+
+void Game::cur_pos_out(int colour) {
+	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hStdOut, (WORD)(colour));
+	int code;
+	if (this->player_num == 1) {
+		code = 120;
+	}
+	else {
+		code = 111;
+	}
+	cout << (char)code;
+	SetConsoleTextAttribute(hStdOut, (WORD)(15));
 }
