@@ -123,7 +123,7 @@ void Game::move(char diraction) {
 			break;
 		}
 		this->cur_pos.second += 1;
-		break;
+		break;		
 	}
 }
 
