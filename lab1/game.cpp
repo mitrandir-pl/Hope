@@ -29,3 +29,9 @@ int Game::get(int x, int y) {
 	}
 	return field[x][y];
 }
+bool Game::is_empty(int x, int y) { //if cell is empty - 1, else - 0
+	if (get(x, y) == 0) {
+		return 1;
+	}
+	return 0;
+}
