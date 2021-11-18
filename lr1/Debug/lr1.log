@@ -1,0 +1,11 @@
+﻿  cell.cpp
+  game.cpp
+D:\софт для проги\3_sem\proga\PPvIS\lr1\game.cpp(36,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\софт для проги\3_sem\proga\PPvIS\lr1\game.cpp(37,22): warning C4018: <: несоответствие типов со знаком и без знака
+D:\софт для проги\3_sem\proga\PPvIS\lr1\game.cpp(51,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\софт для проги\3_sem\proga\PPvIS\lr1\game.cpp(52,21): warning C4018: <: несоответствие типов со знаком и без знака
+  lr1.cpp
+  Создание кода...
+D:\софт для проги\3_sem\proga\PPvIS\lr1\cell.cpp(68): warning C4172: возвращение адреса локальной или временной переменной : temp
+D:\софт для проги\3_sem\proga\PPvIS\lr1\cell.cpp(57): warning C4172: возвращение адреса локальной или временной переменной : temp
+  lr1.vcxproj -> D:\софт для проги\3_sem\proga\PPvIS\lr1\Debug\lr1.exe

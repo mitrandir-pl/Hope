@@ -1,5 +1,0 @@
-﻿  game.cpp
-  lr1.cpp
-  Создание кода...
-D:\софт для проги\3_sem\proga\PPvIS\laba_1\Новая папка\game.cpp(25): warning C4715: Game::set: значение возвращается не при всех путях выполнения
-  lr1.vcxproj -> D:\софт для проги\3_sem\proga\PPvIS\laba_1\Новая папка\x64\Debug\lr1.exe
